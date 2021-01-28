@@ -1,0 +1,409 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 62.5%;
+
+    color: #011627;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+/* nav START */
+
+nav {
+    width: 100%;
+    height: 7.5%;
+
+    background-color: #FDFFFC;
+
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+}
+
+.container {
+    width: 75%;
+    height: 100%;
+
+    margin: 0 auto;
+
+    /* background-color: gainsboro; */
+
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    width: 50%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    /* background-color: red; */
+}
+
+.left h1 {
+    font-size: 4.2rem;
+
+    letter-spacing: 0.25rem;
+
+    cursor: default;
+}
+
+.left h1 span {
+    color: #e71d36;
+}
+
+.right {
+    width: 50%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+
+    /* background-color: green; */
+}
+
+.links {
+    height: 100%;
+
+    list-style: none;
+
+    /* background-color: blue; */
+
+    display: flex;
+    flex-direction: row;
+
+    letter-spacing: 0.15rem;
+}
+
+.links li {
+    /* background-color: green; */
+
+    display: flex;
+    align-items: center;
+
+    height: 100%;
+
+    margin: 0 1rem;
+}
+
+.links a {
+    font-size: 3.2rem;
+
+    color: #011627;
+
+    text-decoration: none;
+}
+
+.active {
+    /* background-color: wheat; */
+    padding: 0.25rem 0 0 0;
+
+    border-bottom: 0.375rem solid #E71D36;
+}
+
+.active a,
+.links a:hover {
+    color: #e71d36;
+
+    transition-duration: 0.25s;
+}
+
+/* nav FINISH */
+
+/* main START */
+
+main {
+    height: 92.5%;
+
+    padding: 1.5rem;
+}
+
+section {
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    background-color: red;
+
+    transition-duration: 0.75s;
+}
+
+.board {
+    height: 20rem;
+    width: 60rem;
+
+    border-radius: 1.25rem;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 1.5rem;
+
+    background-color: #FDFFFC;
+
+    box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.25),
+    0 0 1rem rgba(0, 0, 0, 0.25);
+}
+
+.data {
+    height: 100%;
+    
+    /* background-color: blue; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.board h1 {
+    font-size: 3.8rem;
+
+    letter-spacing: 0.15rem;
+
+    margin: 1rem;
+}
+
+.board h1 #color-name {
+    color: #FDFFFC;
+    
+    background-color: red;
+    
+    padding: 0.5rem 1.5rem;
+
+    border-radius: 1rem;
+
+    transition-duration: 0.75s;
+}
+
+#color-click {
+    border: none;
+    border-radius: 1rem;
+    outline: none;
+
+    background-color: #011627;
+
+    color: #FDFFFC;
+
+    padding: 2.25rem 7rem;
+
+    font-weight: 700;
+    font-size: 2.8rem;
+    letter-spacing: 0.25rem;
+
+    margin: 1rem;
+    cursor: pointer;
+}
+
+
+/* main FINISH */
+
+/* gradient.html changes */
+.board-gr {
+    height: 30rem;
+    width: 60rem;
+
+    border-radius: 1.25rem;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 1.5rem;
+
+    background-color: #FDFFFC;
+
+    box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.25),
+    0 0 1rem rgba(0, 0, 0, 0.25);
+}
+
+.board-gr .data {
+    height: 100%;
+    
+    /* background-color: blue; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.data .info {
+    /* background-color: green; */
+
+    width: 100%;
+    height: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.board-gr h1 {
+    font-size: 4.2rem;
+
+    /* background-color: blue; */
+    text-align: center;
+
+    letter-spacing: 0.15rem;
+}
+
+.board-gr h1 .color-name {
+    color: #FDFFFC;
+    
+    background-color: red;
+
+    padding: 0.75rem 1.5rem;
+    margin: 1rem;
+
+    border-radius: 1rem;
+
+    transition-duration: 0.75s;
+}
+
+.info {
+    line-height: 7.5rem;
+}
+
+#color-click-gr {
+    border: none;
+    border-radius: 1rem;
+    outline: none;
+
+    background-color: #011627;
+
+    color: #FDFFFC;
+
+    padding: 2.25rem 7.5rem;
+
+    font-weight: 700;
+    font-size: 2.8rem;
+    letter-spacing: 0.25rem;
+
+    margin-top: 3rem;
+    cursor: pointer;
+}
+
+/* gradient.html changes */
+
+/* input.html START */
+
+.input {
+    /* background-color:aqua; */
+
+    display: flex;
+    align-items: center;
+}
+
+.input input {
+    background-color: rgba(0, 0, 0, 0.125);
+
+    border: 0;
+    border-radius: 0.75rem;
+    outline: 0;
+
+    padding: 0 1.5rem;
+
+    font-size: 2.4rem;
+    letter-spacing: 0.25rem;
+
+    height: 6.25rem;
+    width: 17.5rem;
+}
+
+.one-line {
+    /* background-color: blue; */
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 1080px) {
+    section {
+        /* background-color: blue; */
+    }
+
+    nav {
+        min-height: 10rem;
+    }
+
+    .container {
+        flex-direction: column;
+
+        /* background-color: green; */
+    }
+
+    .board {
+        min-height: 25rem;
+    }
+
+    .data {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .left {
+        width: 100%;
+        
+        flex-direction: column;
+
+        /* background-color: red; */
+    }
+
+    .right {
+        width: 100%;
+
+        flex-direction: column;
+
+        /* background-color: yellow; */
+    }
+
+    main {
+        padding: 0;
+    }
+
+    #index .board,
+    #hex .board,
+    #gradient .board-gr,
+    #input .board {
+        transform: scale(0.85)
+    }
+
+    #index .data,
+    #hex .data,
+    #input .input {
+        flex-direction: column;
+    }
+
+    #index .board h1,
+    #hex .board h1 {
+        transform: scale(0.9);
+
+        text-align: center;
+        line-height: 6rem;
+    }
+
+    #index button,
+    #hex button {
+        transform: scale(0.9);
+    }
+
+    #gradient .board-gr {
+        min-height: 37.5rem;
+    }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta chaset="UTF-8">
+
+    <title>Hexient | Colors</title>
+
+    <link rel="icon" href="/imgs/icon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/styles.css">
+</head>
+<body id="input"> 
+    <nav>
+        <div class="container">
+            <div class="left"> 
+                <h1><span>H</span>exient</h1>
+            </div>
+            <div class="right">
+                <ul class="links">
+                    <li>
+                        <a href="/index.html">Color</a>
+                    </li>
+                    <li>
+                        <a href="/hex.html">HEX</a>
+                    </li>
+                    <li>
+                        <a href="/gradient.html">Gradient</a>
+                    </li>
+                    <li class="active">
+                        <a href="/input.html">Input</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section>
+            <div class="board">
+                <div class="data">
+                    <div class="input">
+                        <h1>Background color:</h1>
+                        <div class="one-line">
+                            <h1>#</h1>
+                            <input type="text" id="color-input" name="color-input" placeholder="FF0000">
+                        </div>
+                    </div>
+                <button href="#" id="color-click">Change Color</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="src/input.js"></script>
+</body>
+</html>
